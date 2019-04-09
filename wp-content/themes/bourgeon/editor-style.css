@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+html {
+  overflow-y:scroll;
+}
+html .mceContentBody {
+  width: 700px;
+}
+body, html {
+  font-size: 100%;
+  color: #5a5a5a;
+  font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+}
+:focus {
+  outline: 0;
+}
+
+/* resets */
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: #496a8d;
+  text-decoration: none;
+}
+a:focus,
+a:active,
+a:hover {
+  color: #6f9dce;
+}
+
+/* Paragraph */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+}
+
+/* Headlines */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  line-height: 1.4;
+  clear: both;
+}
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.5em;
+}
+.mceContentBody h3 {
+  padding: 8px 8px 16px;
+  border-left: 5px solid #cfcdcd;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1.2em;
+}
+
+hr {
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.25em 0 1.1875em;
+  height: 0;
+}
+
+/* Lists */
+ul, ol, dl {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+  list-style-position: outside;
+  font-family: inherit;
+}
+
+/* Unordered Lists */
+ul li ul,
+ul li ol {
+  margin-left: 1.25em;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+/* Ordered Lists */
+ol li ul,
+ol li ol {
+  margin-left: 1.25em;
+  margin-bottom: 0;
+}
+
+nav ul {
+list-style: none;
+}
+
+/* Definition Lists */
+dl dt {
+  margin-bottom: 0.3em;
+}
+dl dd {
+  margin-bottom: 0.75em;
+  padding: 0;
+}
