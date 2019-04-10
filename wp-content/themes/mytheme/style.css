@@ -1,53 +1,61 @@
 @charset "UTF-8";
+
 /*
 Theme Name : MY THEME
 Author: Sawa
 Description: This is my original theme.
 Versions: 1.0
 */
-
 body {
-    margin: 0;
-    font-family: "Meiryo";
+  margin: 0;
+  font-family: "Meiryo";
 }
+
 .container {
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
 header {
-    margin-bottom: 40px;
-    background-color: #4a5f7e;
-    color: #ffffff;
+  margin-bottom: 40px;
+  background-color: #4a5f7e;
+  color: #ffffff;
 }
+
 header a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
+
 .siteinfo {
-    overflow: hidden;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    background: #ffffff;
-    color: #4a5f7e;
+  overflow: hidden;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background: #ffffff;
+  color: #4a5f7e;
 }
+
 .siteinfo a {
   color: #4a5f7e;
 }
+
 .siteinfo h1 {
-    float: left;
-    margin: 0;
-    font-family: 'Acme', 'sans-serif';
-    font-size: 20px;
+  float: left;
+  margin: 0;
+  font-family: 'Acme', 'sans-serif';
+  font-size: 20px;
 }
+
 .siteinfo p {
-    float: right;
-    margin: 0;
-    margin-top: 5px;
-    font-size: 12px;
+  float: right;
+  margin: 0;
+  margin-top: 5px;
+  font-size: 12px;
 }
+
 /* ナビゲーションメニュー */
 nav ul {
   list-style: none;
@@ -56,208 +64,246 @@ nav ul {
   font-size: 12px;
   overflow: hidden;
 }
+
 nav li {
   float: left;
   margin-right: 15px;
 }
+
 nav li a {
   display: block;
   padding-top: 15px;
   padding-bottom: 10px;
   border-bottom: solid 5px transparent;
 }
+
 nav li a:hover {
   border-bottom: solid 5px #00ccff;
 }
+
 nav li.current-menu-item a {
   border-bottom-color: #e6cc1e;
 }
+
 article {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 article h1 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: normal;
+  margin: 0;
+  font-size: 32px;
+  font-weight: normal;
 }
 
 article h1 a {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
 
 /* 記事の付加情報 */
 .postinfo {
-    margin-top: 15px;
-    font-size: 14px;
+  margin-top: 15px;
+  font-size: 14px;
 }
+
 .postinfo a {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
+
 .postinfo .postcat {
-    margin-left: 20px;
+  margin-left: 20px;
 }
+
 .postinfo .postcom {
-    margin-left: 20px;
+  margin-left: 20px;
 }
+
 .postinfo i {
-    color: #888888;
+  color: #888888;
 }
+
 .pagenav a {
-    padding: 5px 10px;
-    border: solid 1px #cccccc;
-    border-radius: 10px;
-    color: #666666;
-    font-size: 12px;
-    text-decoration: none;
+  padding: 5px 10px;
+  border: solid 1px #cccccc;
+  border-radius: 10px;
+  color: #666666;
+  font-size: 12px;
+  text-decoration: none;
 }
+
 .pagenav .old a {
-    float: left;
+  float: left;
 }
+
 .pagenav .new a {
-    float: right;
+  float: right;
 }
+
 .pagenav {
-    overflow: hidden;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
+
 footer {
-    margin-top: 40px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    background-color: #4a5f7e;
-    color: #ffffff;
+  margin-top: 40px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #4a5f7e;
+  color: #ffffff;
 }
 
 /* メニュー */
 .blogmenu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .blogmenu .widget {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #e8e8e8;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #e8e8e8;
 }
 
 .blogmenu .widgettitle {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-right: 10px solid #4a5f7e;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-right: 10px solid #4a5f7e;
 }
 
 .blogmenu li a {
-    display: block;
-    padding: 10px 5px;
-    color: #666666;
-    font-size: 14px;
-    text-decoration: none;
+  display: block;
+  padding: 10px 5px;
+  color: #666666;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .blogmenu li a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* 見出し */
 .archive-title {
-    margin-top: 0;
-    margin-bottom: 40px;
-    background-color: #eee;
-    font-size: 14px;
-    font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 40px;
+  background-color: #eee;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .archive-title i {
-    padding: 15px;
-    background-color: #4a5f7e;
-    color: #fff;
+  padding: 15px;
+  background-color: #4a5f7e;
+  color: #fff;
 }
 
 /* コメント投稿フォーム */
 #respond p {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
 }
 
 #respond label {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #respond input, textarea {
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 
 #respond input[type="submit"] {
-    width: 200px;
-    padding: 10px;
-    border: none;
-    background-color: #e6cc1c;
-    -webkit-appearance: none;
-    cursor: pointer;
+  width: 200px;
+  padding: 10px;
+  border: none;
+  background-color: #e6cc1c;
+  -webkit-appearance: none;
+  cursor: pointer;
 }
 
 #respond input[type="submit"]:hover {
-    background-color: #ff8800;
+  background-color: #ff8800;
 }
 
 #respond .required {
-    color: red;
+  color: red;
 }
 
 /* お問い合わせフォーム */
 .wpcf7 input, textarea {
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 
 .wpcf7 input[type="submit"] {
-    width: 200px;
-    padding: 10px;
-    border: none;
-    background-color: #e6cc1c;
-    -webkit-appearance: none;
-    cursor: pointer;
+  width: 200px;
+  padding: 10px;
+  border: none;
+  background-color: #e6cc1c;
+  -webkit-appearance: none;
+  cursor: pointer;
 }
 
 .wpcf7 input[type="submit"]:hover {
-    background-color: #ff8800;
+  background-color: #ff8800;
+}
+
+/* メディアクエリ */
+@media (min-width: 768px) {
+
+  /* 2段組 */
+  .container {
+    max-width: 1000px;
+    overflow: hidden;
+  }
+
+  .contents {
+    max-width: 65%;
+    float: left;
+  }
+
+  .blogmenu {
+    width: 30%;
+    float: right;
+  }
+
+  nav li {
+    margin-right: 40px;
+  }
 }
 
 /* コメント */
 #comments footer {
-    background: none;
-    margin: 0;
-    color: #000;
-    font-size: 12px;
+  background: none;
+  margin: 0;
+  color: #000;
+  font-size: 12px;
 }
 
 #comments footer a {
-    color: #000;
+  color: #000;
 }
 
 #comments footer div {
-    display: inline;
+  display: inline;
 }
 
 #comments ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #comments article {
-    border: dotted 1px #aaa;
-    margin-bottom: 10px;
-    padding: 10px 20px 20px 20px;
+  border: dotted 1px #aaa;
+  margin-bottom: 10px;
+  padding: 10px 20px 20px 20px;
 }
 
 #comments .comment-content {
-    margin-left: 30px;
+  margin-left: 30px;
 }
