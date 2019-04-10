@@ -8,7 +8,7 @@ Versions: 1.0
 
 body {
     margin: 0;
-    font-family: "メイリオ", "Hiragino Kaku Gothic Pro", "sans-serif";
+    font-family: "Meiryo";
 }
 .container {
     max-width: 650px;
@@ -30,6 +30,11 @@ header a {
     overflow: hidden;
     padding-top: 14px;
     padding-bottom: 14px;
+    background: #ffffff;
+    color: #4a5f7e;
+}
+.siteinfo a {
+  color: #4a5f7e;
 }
 .siteinfo h1 {
     float: left;
@@ -42,6 +47,30 @@ header a {
     margin: 0;
     margin-top: 5px;
     font-size: 12px;
+}
+/* ナビゲーションメニュー */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  overflow: hidden;
+}
+nav li {
+  float: left;
+  margin-right: 15px;
+}
+nav li a {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: solid 5px transparent;
+}
+nav li a:hover {
+  border-bottom: solid 5px #00ccff;
+}
+nav li.current-menu-item a {
+  border-bottom-color: #e6cc1e;
 }
 article {
     margin-bottom: 40px;
@@ -126,7 +155,7 @@ footer {
     display: block;
     padding: 10px 5px;
     color: #666666;
-    font-style: 14px;
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -180,6 +209,25 @@ footer {
 
 #respond .required {
     color: red;
+}
+
+/* お問い合わせフォーム */
+.wpcf7 input, textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.wpcf7 input[type="submit"] {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: #e6cc1c;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.wpcf7 input[type="submit"]:hover {
+    background-color: #ff8800;
 }
 
 /* コメント */
