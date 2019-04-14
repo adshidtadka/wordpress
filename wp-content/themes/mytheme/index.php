@@ -11,17 +11,17 @@
     </h1>
     <?php endif; ?>
 
-    <?php if(is_month()): ?>
+    <?php if (is_month()): ?>
     <h1 class="archive-title">
       <i class="fa fa-clock"></i>
       <?php echo get_the_date('Y月n日'); ?>に投稿した記事
     </h1>
     <?php endif ?>
 
-    <?php if(have_posts()): while (have_posts()): the_post(); ?>
+    <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <article <?php post_class(); ?>>
 
-      <?php if(is_single()): ?>
+      <?php if (is_single()): ?>
       <h1><?php the_title(); ?></h1>
       <?php else: ?>
       <h1>
@@ -55,9 +55,21 @@
         </span>
       </div>
 
+      <?php if (is_single()): ?>
       <?php the_content(); ?>
+      <?php else: ?>
+      <div class="excerpt">
+        <?php if (has_post_thumbnail()): ?>
+        <p><?php the_post_thumbnail('medium'); ?></p>
+        <?php endif; ?>
+        <?php the_excerpt(); ?>
+        <p class="more">
+          <a href="<?php the_permalink(); ?>">続きを読む<i class="fa fa-chevron-right"></i></a>
+        </p>
+      </div>
+      <?php endif; ?>
 
-      <?php if(is_single()): ?>
+      <?php if (is_single()): ?>
       <div class="pagenav">
         <span class="old">
           <?php previous_post_link(

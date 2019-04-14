@@ -56,6 +56,68 @@ header a {
   font-size: 12px;
 }
 
+/* ヘッダー画像 */
+header img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* トップページ */
+.largeheader {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.home header {
+  margin-bottom: 0;
+}
+.home footer {
+  margin-top: 0;
+}
+
+/* トップページのメニュー */
+.topmenu {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.link {
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (min-width: 500px) {
+  .topmenu {
+    overflow: hidden;
+  }
+  .link {
+    float: left;
+    width: 33.33%;
+  }
+}
+.link a {
+  color: #aaaaaa;
+  font-size: 20px;
+  text-decoration: none;
+}
+.link i {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 150px;
+  line-height: 150px;
+  border-radius: 75px;
+  background-color: #ecc952;
+  color: #ffffff;
+  font-size: 50px;
+}
+.link:nth-child(2) i {
+  background-color: #e8a380;
+}
+.link:nth-child(3) i {
+  background-color: #b7ef6b;
+}
+
 /* ナビゲーションメニュー */
 nav ul {
   list-style: none;
@@ -273,6 +335,42 @@ footer {
 
   nav li {
     margin-right: 40px;
+  }
+}
+
+/* 記事の概要 */
+.excerpt {
+  overflow: hidden;
+}
+.excerpt p {
+  font-size: 14px;
+}
+.excerpt .more a {
+  padding: 5px 20px;
+  border: solid 1px #cccccc;
+  border-radius: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+.excerpt .more a:hover {
+  background-color: #e6cc1c;
+}
+.excerpt .more i {
+  margin-left: 10px;
+  color: #cccccc;
+}
+@media (min-width: 500px) {
+  .excerpt img {
+    float: left;
+    margin-right: 20px;
+    width: 40%;
+  }
+}
+@media (max-width: 499px) {
+  .excerpt img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
